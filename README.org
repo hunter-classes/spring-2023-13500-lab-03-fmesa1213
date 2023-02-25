@@ -1,10 +1,10 @@
 * Spring 2023 - Lab 03
 
-* Last name:
+* Last name: Mesa
 
-* First name:
+* First name: Frida
 
-* GitHub username:
+* GitHub username: fmesa1213
 
 * Notes:
 
