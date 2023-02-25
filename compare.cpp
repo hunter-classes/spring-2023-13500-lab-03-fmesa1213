@@ -15,14 +15,14 @@ on that day by printing “East” or “West”, or print “Equal” if both b
 using namespace std;
 
 int main()
-
 {
 
 string startDate;
+string endDate;
+  
 cout << "Enter starting date: ";
 cin >> startDate;
 
-string endDate;
 cout << "Enter ending date: ";
 cin >> endDate;
 
@@ -37,16 +37,23 @@ getline(fin, junk);
 int dateRange = 0;
 
 string date;
-double eastSt, eastEl, westSt, westEl;
-while(fin >> date >> eastSt >> eastEl >> westSt >> westEl) {
+double eastSt;
+double eastEl;
+double westSt;
+double westEl;
+  
+  while(fin >> date >> eastSt >> eastEl >> westSt >> westEl) {
 
-if(date == startDate){dateRange = 1;}
-if(date == endDate){dateRange = 0;}
+    if(date == startDate){dateRange = 1;}
+    if(date == endDate){dateRange = 0;}
 
-if(dateRange == 1){
-if (eastEl>westEl) {cout<< date <<" East "<<endl;}
-else if(eastEl<westEl){cout << date << " West "<<endl;}
-else {cout << date << " Equal "<<endl;}
+if(dateRange == 1)
+{
+  if (eastEl > westEl) { cout << date << " East " << endl;
+}
+  else if ( eastEl <= westEl){ cout << date << " West " << endl;
+}
+  else {cout << date << " Equal "<<endl;}
 }
 }
 fin.close();
