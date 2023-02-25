@@ -49,7 +49,7 @@ double westEl;
 
 if(dateRange == 1)
 {
-  if (eastEl > westEl) { cout << date << " East " << endl;
+  if (eastEl >= westEl) { cout << date << " East " << endl;
 }
   else if ( eastEl <= westEl){ cout << date << " West " << endl;
 }
